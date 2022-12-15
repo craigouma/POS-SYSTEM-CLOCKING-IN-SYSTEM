@@ -24,7 +24,7 @@ class POS:
     def checkout(self):
         if len(self.cart) == 0:
             raise ValueError("Your cart is empty.")
-        print("Your total is $" + str(self.total_price))
+        print("Your total is KSh" + str(self.total_price))
 
 class Clock:
     def __init__(self):
@@ -53,7 +53,7 @@ class Clock:
 
 # Initialize the POS system with a list of items and their prices
 items = ["apple", "banana", "orange"]
-prices = {"apple": 0.99, "banana": 0.50, "orange": 0.75}
+prices = {"apple": 100, "banana": 150, "orange": 175}
 pos = POS(items, prices)
 
 # Add some items to the cart
